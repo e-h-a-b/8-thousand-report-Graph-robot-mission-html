@@ -1,0 +1,162 @@
+<html lang="en" class=" js">
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ td:hover {
+  background:red !important;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 740px;
+  margin: -14px auto -14px;
+  padding: 0;
+  list-style: none;
+}
+
+ 
+table {
+  width: 220px;
+  /*margin: 0px;*/
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+th {
+  position: relative;
+  width: 80px;
+  height: 32px;
+  padding: 0 0 12px;
+  text-align: center;
+}
+
+th::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 20px;
+  background-color: #acc2c2;
+  transition: opacity .4s;
+}
+
+td {
+  position: relative;
+  width: 2px;
+  height: 9px;
+  padding: 4px;
+  vertical-align: top;
+  background-color: #dfe7e7;
+}
+
+td:empty {
+ /* background-color: transparent;*/
+}
+ 
+
+.tg-0lax {
+  opacity: 100%;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: opacity .4s;
+}
+ 
+ 
+/* 138 cloumn
+    62 rows
+*/
+</style>
+
+  <meta charset="UTF-8">
+  
+</head>
+<script>
+alert(document.getElementById('#table1').rows[0].cells.length)
+document.getElementById("table1").addEventListener("load", change);
+</script>
+<html><head>
+    <style>
+        
+    </style>
+    </head>
+<body>
+     
+    <script type="text/javascript">
+        var i = 0;
+function change() {
+  //var doc = document.getElementById("table1");
+  var doc = document.getElementsByClassName('tg-0lax');
+  var color = ["black", "blue", "brown", "green"];
+  doc.style.background = color[i];
+  i = (i + 1) % color.length;
+}
+setInterval(change, 1000);
+    </script>
+
+</body></html>
+<body translate="no" >
+ <script>
+loadtheclicks() {
+var ar = document.querySelectorAll("td"); //could also use getElementByTagname
+        for (var i=0; i< ar.length; i++) {
+            ar[i].addEventListener("click", function() { this.style.background = '#000000'; }, false);
+        }
+}
+ 
+</script>
+
+ </body>
+ </html>
+ <!DOCTYPE html>
+<html>
+<head>
+<title> Boxes </title>
+<meta charset='utf-8'>
+  
+  </head>
+  <body>
+  <table>
+  <tbody> 
+  <div id="content"></div>
+  <script type="text/javascript">
+    var row = 62;
+    var cols = 138;
+ 
+function getid(obj) { 
+	 var myDiv = document.getElementById("content");
+    myDiv.innerHTML = "Location : " + obj.id;
+  }
+ var colorc = ["lightgreen", "lime", "brown", "green"];
+  var ic = 0;     
+  for(var r=0;r<row;r++){
+    document.write("</tr>");
+
+    for(var c=0;c<cols;c++){
+	var rc = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
+        g = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
+        b = ('0'+(Math.random()*255|0).toString(16)).slice(-2);
+		 
+       //c[1].style.background = color[i];
+ 
+      document.write('<td id="' + r + c + '"   onmouseover="getid(this);" onmouseout="outmouse(this);" style="background:' + colorc[ic] + ';" ></td>'); 
+  ic = Math.floor((Math.random() * 4) + 1);
+    }
+    document.write("</tr>");
+	 
+  }
+  
+  </script>
+  </tbody>
+  </table>
+  </body>
+  </html>
