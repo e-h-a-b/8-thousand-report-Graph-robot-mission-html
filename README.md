@@ -1,8 +1,8 @@
 # 8-thousand-report-Using-javascript
 
-Worling Perfect in Google earth
+Working Perfect in Google earth
 
-Copy this code and insert it in Google earth Exciting
+Copy this code and insert it in Google earth, Exciting
 
 I made This Program To graph 8 thousand Report From multi robot Works
 
