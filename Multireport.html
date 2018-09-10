@@ -1,14 +1,19 @@
+
 <html lang="en" class=" js">
 <head>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
+body {
+background-color: #162b4a;
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+#content{
+    color: red;
+}
  td:hover {
   background:red !important;
 }
@@ -93,12 +98,20 @@ document.getElementById("table1").addEventListener("load", change);
      
     <script type="text/javascript">
         var i = 0;
+		var color = ["#529fd9", "#162b4a"];
+		var colorv = ["#162b4a", "#529fd9"];
 function change() {
-  //var doc = document.getElementById("table1");
-  var doc = document.getElementsByClassName('tg-0lax');
-  var color = ["black", "blue", "brown", "green"];
-  doc.style.background = color[i];
-  i = (i + 1) % color.length;
+   i = (i + 1) % color.length;
+    
+	  for(var r=0;r<62;r++){
+	  for(var c=0;c<138;c++){
+      var doc = document.getElementById("30" + c);
+      doc.style.background = color[i];
+  var docv = document.getElementById(r + "62");
+    docv.style.background = colorv[i];
+   } 
+   }
+ 	
 }
 setInterval(change, 1000);
     </script>
@@ -129,14 +142,18 @@ var ar = document.querySelectorAll("td"); //could also use getElementByTagname
   <tbody> 
   <div id="content"></div>
   <script type="text/javascript">
-    var row = 62;
+    var row = 48;
     var cols = 138;
  
 function getid(obj) { 
 	 var myDiv = document.getElementById("content");
     myDiv.innerHTML = "Location : " + obj.id;
   }
- var colorc = ["lightgreen", "lime", "brown", "green"];
+ var colorc = ["","#339196", "#33963b", "#949633", "#963345"];
+ 
+
+
+
   var ic = 0;     
   for(var r=0;r<row;r++){
     document.write("</tr>");
@@ -158,5 +175,59 @@ function getid(obj) {
   </script>
   </tbody>
   </table>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="120" height="120"  viewBox="28.1303 -32.1355 518.414 490.617">
+  <path d="M 199,200 Q 300, 174.12 384,197  M 400,200 M 415, 205 C 600, 251.76 444.82,520.52 300,372.2 Q 227.59,299.54 205,216  M 200,200 M 197, 186 C 145.82,0.82 455.18,0.82 400,200 Q 372.41,299.54 312,361  M 300,373.2 M 290, 383.2 C 155.18,520.52 0,251.76 200,200 "
+        stroke="#529fd9" stroke-width="2" fill="none" id="wire"></path>
+  <circle cx="" cy="" r="8" fill="#529fd9">
+    <animateMotion dur="20s" repeatCount="indefinite">
+      <mpath xlink:href="#wire"></mpath>
+    </animateMotion>
+  </circle>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="120" height="120"  viewBox="0 0 200 200">
+  <path d="M 100, 100
+        m -75, 0
+        a 75,75 0 1,0 150,0
+        a 75,75 0 1,0 -150,0"
+        stroke="#529fd9" stroke-width="1" fill="none" id="wir"></path>
+  <circle cx="" cy="" r="4" fill="#529fd9">
+    <animateMotion dur="20s" repeatCount="indefinite">
+      <mpath xlink:href="#wir"></mpath>
+    </animateMotion>
+  </circle>
+</svg>
+ 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="120" height="120"  viewBox="0 0 400 400">
+  <path d="M 100 100 L 300 100 L 200 300 z"
+        stroke="#529fd9" stroke-width="2" fill="none" id="rec"></path>
+  <circle cx="" cy="" r="8" fill="#529fd9">
+    <animateMotion dur="6s" repeatCount="indefinite">
+      <mpath xlink:href="#rec"></mpath>
+    </animateMotion>
+  </circle>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 100 100">
+  <path d="M 10 30 h 10 v 10 h 10 v 10 h 10 v 10 h 10 v 10 h 10 v 10 h 10 v 10" stroke="#529fd9" stroke-width=".5" fill="none" id="zig"></path>
+  <circle cx="" cy="" r="1" fill="#529fd9">
+    <animateMotion dur="6s" repeatCount="indefinite">
+      <mpath xlink:href="#zig"></mpath>
+    </animateMotion>
+  </circle>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 -116 124 116"> 
+<g transform="scale(1,-1)">
+
+<path d="M120,4 V112 H4 V12 H48 V24 H16 V100 H108 V16 H72 V20 H104 V96 H20 V28 H52 V8 L56,4 V32 H24 V92 H100 V24 H68 V12 H112 V104 H12 V20 H44 V16 H8 V108 H116 V8 H64 V28 H96 V88 H28 V36 H56 V60 H68 V44 H80 V72 H44 V48 H40 V76 H84 V40 H64 V52 L60,56 V36 H88 V80 H36 V44 H48 V68 H76 V48 H72 V64 H52 V40 H32 V84 H92 V32 H60 V4Z" stroke="#529fd9" stroke-width="1" fill="none" id="sr"></path>
+    <circle cx="" cy="" r="2" fill="red">
+    <animateMotion dur="70s" repeatCount="indefinite">
+      <mpath xlink:href="#sr"></mpath>
+    </animateMotion>
+  </circle>
+</g>
+</svg>
+
   </body>
   </html>
