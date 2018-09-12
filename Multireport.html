@@ -179,8 +179,9 @@ var ar = document.querySelectorAll("td"); //could also use getElementByTagname
  
 function getid(obj) { 
 	 var myDiv = document.getElementById("content");
+	 var myDiv0 = document.getElementById("box-shadow-div");
     myDiv.innerHTML = "Location : " + obj.id;
-	
+	myDiv0.innerHTML =  myDiv.innerHTML;
   }
  var colorc = ["","#339196", "#33963b", "#949633", "#963345"];
  
@@ -300,3 +301,40 @@ function myFunction(obj) {
  
   </body>
   </html>
+
+  <!DOCTYPE html>
+<html>
+    <head>
+        <title>box-shadow-experiment</title>
+        <style type="text/css">
+            #box-shadow-div{
+                position: fixed;
+                width: 120px;
+                height: 20px;
+                /*border-radius: 100%;*/
+                background-color:green;
+               /* box-shadow: 0 0 10px 10px black;*/
+                top: 49%;
+                left: 48.85%;
+            }
+        </style>
+        <script type="text/javascript">
+            window.onload = function(){
+                var bsDiv = document.getElementById("box-shadow-div");
+                var x, y;
+    // On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
+                window.addEventListener('mousemove', function(event){
+                    x = event.clientX+20;
+                    y = event.clientY+20;                    
+                    if ( typeof x !== 'undefined' ){
+                        bsDiv.style.left = x + "px";
+                        bsDiv.style.top = y + "px";
+                    }
+                }, false);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="box-shadow-div"></div>
+    </body>
+</html>
