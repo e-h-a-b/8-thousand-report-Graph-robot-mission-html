@@ -1,29 +1,3 @@
-
-<html lang="en" class=" js">
-<head>
-<style>
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-body {
-background-color: #162b4a;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-#content{
-    color: red;
-}
- td:hover {
-  background:red !important;
-}
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  width: 740px;
-  margin: -14px auto -14px;
-  padding: 0;
-  list-style: none;
 <html lang="en" class=" js">
 <head>
 <style>
@@ -50,8 +24,7 @@ ul {
   padding: 0;
   list-style: none;
 }
-
- 
+  
 table {
   width: 220px;
   /*margin: 0px;*/
@@ -59,16 +32,14 @@ table {
   border-collapse: separate;
   border-spacing: 1px;
 }
-
-th {
+ th {
   position: relative;
   width: 80px;
   height: 32px;
   padding: 0 0 12px;
   text-align: center;
 }
-
-th::after {
+ th::after {
   content: '';
   display: block;
   position: absolute;
@@ -79,8 +50,7 @@ th::after {
   background-color: #acc2c2;
   transition: opacity .4s;
 }
-
-td {
+ td {
   position: relative;
   width: 2px;
   height: 9px;
@@ -88,13 +58,11 @@ td {
   vertical-align: top;
   background-color: #dfe7e7;
 }
-
-td:empty {
+ td:empty {
  /* background-color: transparent;*/
 }
  
-
-.tg-0lax {
+ .tg-0lax {
   opacity: 100%;
   font-size: 1.1em;
   font-weight: bold;
@@ -104,36 +72,30 @@ td:empty {
  /*
  *  STYLE 3
  */
-
-#mySelect::-webkit-scrollbar-track
+ #mySelect::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background-color: #3c516f;
 }
-
-#mySelect::-webkit-scrollbar
+ #mySelect::-webkit-scrollbar
 {
     width: 6px;
     background-color: #3c516f;
 }
-
-#mySelect::-webkit-scrollbar-thumb
+ #mySelect::-webkit-scrollbar-thumb
 {
     background-color: #404040;
 }
-
-
-/* 138 cloumn
+ /* 138 cloumn
     62 rows
 */
 </style>
 
-  <meta charset="UTF-8">
-  
-</head>
-<script>
+   <meta charset="UTF-8">
 
-document.getElementById("table1").addEventListener("load", change);
+ </head>
+<script>
+ document.getElementById("table1").addEventListener("load", change);
 </script>
 <html><head>
     <style>
@@ -141,8 +103,8 @@ document.getElementById("table1").addEventListener("load", change);
     </style>
     </head>
 <body>
- 
-    <script type="text/javascript">
+
+     <script type="text/javascript">
         var i = 0;
 		var color = ["#529fd9", "#162b4a"];
 		var colorv = ["#162b4a", "#529fd9"];
@@ -153,27 +115,23 @@ document.getElementById("table1").addEventListener("load", change);
 		"AL", "AM", "AN", "AO", "AP", "AQ", "AR", "AS", "AT",
 		"AU", "AV", "AW", "AX", "AY", "AZ", "BA", "BB", "BC",
 		"BD", "BE", "BF", "BG", "BH", "BI", "BJ"];
-
-function change() {
+ function change() {
    i = (i + 1) % color.length;
-
-
-	  for(var r=0;r<62;r++){
+ 	  for(var r=0;r<62;r++){
 	  for(var c=0;c<138;c++){
       var doc = document.getElementById(Alph[r] + "60");
       doc.style.background = color[i];
   var docv = document.getElementById("AC" + c );
     docv.style.background = colorv[i];
 	
-
-   } 
+    } 
    }
  
 }
 setInterval(change, 1000);
     </script>
 
-</body></html>
+ </body></html>
 <body translate="no" >
  <script>
 loadtheclicks() {
@@ -185,15 +143,15 @@ var ar = document.querySelectorAll("td"); //could also use getElementByTagname
  
 </script>
 
- </body>
+  </body>
  </html>
  <!DOCTYPE html>
 <html>
 <head>
 <title> Boxes </title>
 <meta charset='utf-8'>
-  
-  </head>
+
+   </head>
   <body>
   <table>
   <tbody> 
@@ -214,8 +172,7 @@ function getid(obj) {
   var ic = 0;     
   for(var r=0;r<row;r++){
     document.write("</tr>");
-
-    for(var c=0;c<cols;c++){
+     for(var c=0;c<cols;c++){
 	var rc = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
         g = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
         b = ('0'+(Math.random()*255|0).toString(16)).slice(-2);
@@ -257,8 +214,8 @@ function getid(obj) {
     </animateMotion>
   </circle>
 </svg>
- 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+
+ <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="120" height="120"  viewBox="0 0 400 400">
   <path d="M 100 100 L 300 100 L 200 300 z"
         stroke="#529fd9" stroke-width="2" fill="none" id="rec"></path>
@@ -279,7 +236,7 @@ function getid(obj) {
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 -116 124 116"> 
 <g transform="scale(1,-1)">
 
-<path d="M120,4 V112 H4 V12 H48 V24 H16 V100 H108 V16 H72 V20 H104 V96 H20 V28 H52 V8 L56,4 V32 H24 V92 H100 V24 H68 V12 H112 V104 H12 V20 H44 V16 H8 V108 H116 V8 H64 V28 H96 V88 H28 V36 H56 V60 H68 V44 H80 V72 H44 V48 H40 V76 H84 V40 H64 V52 L60,56 V36 H88 V80 H36 V44 H48 V68 H76 V48 H72 V64 H52 V40 H32 V84 H92 V32 H60 V4Z" stroke="#529fd9" stroke-width="1" fill="none" id="sr"></path>
+ <path d="M120,4 V112 H4 V12 H48 V24 H16 V100 H108 V16 H72 V20 H104 V96 H20 V28 H52 V8 L56,4 V32 H24 V92 H100 V24 H68 V12 H112 V104 H12 V20 H44 V16 H8 V108 H116 V8 H64 V28 H96 V88 H28 V36 H56 V60 H68 V44 H80 V72 H44 V48 H40 V76 H84 V40 H64 V52 L60,56 V36 H88 V80 H36 V44 H48 V68 H76 V48 H72 V64 H52 V40 H32 V84 H92 V32 H60 V4Z" stroke="#529fd9" stroke-width="1" fill="none" id="sr"></path>
     <circle cx="" cy="" r="2" fill="red">
     <animateMotion dur="70s" repeatCount="indefinite">
       <mpath xlink:href="#sr"></mpath>
@@ -296,9 +253,9 @@ function getid(obj) {
   </circle>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 600 600">
-  
- <path  stroke="#529fd9" stroke-width="3" fill="none" id="zigbs" d="M 93 156 l 0 0 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l -1 -1 l 0 -1 l 0 -2 l 0 -1 l -1 -1 l 0 -2 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -3 l 0 -2 l 0 -2 l 1 -3 l 0 -2 l 1 -1 l 0 -2 l 1 -2 l 0 -1 l 1 -1 l 0 -1 l 1 -3 l 1 -1 l 1 -3 l 2 -4 l 1 -2 l 4 -3 l 2 -2 l 1 0 l 2 -2 l 1 -1 l 1 -2 l 2 -2 l 1 -2 l 0 -2 l 2 -4 l 1 -1 l 1 -3 l 1 -2 l 2 -1 l 1 -1 l 4 -3 l 2 0 l 6 -3 l 3 -1 l 2 -2 l 3 -2 l 1 0 l 1 -2 l 3 -1 l 2 -2 l 2 0 l 2 0 l 1 0 l 2 0 l 1 0 l 2 0 l 1 -1 l 1 0 l 2 0 l 1 -1 l 1 0 l 2 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 4 0 l 2 0 l 1 0 l 4 0 l 1 0 l 2 0 l 2 0 l 1 0 l 3 0 l 1 1 l 2 0 l 5 1 l 3 0 l 5 2 l 5 3 l 3 0 l 3 1 l 7 4 l 5 2 l 5 3 l 6 3 l 1 1 l 1 1 l 1 0 l 1 1 l 2 1 l 1 0 l 1 1 l 1 1 l 0 1 l 2 4 l 2 2 l 1 5 l 2 3 l 1 2 l 1 2 l 2 3 l 0 1 l 2 2 l 0 2 l 1 1 l 1 3 l 0 1 l 0 3 l 1 3 l 1 1 l 0 2 l 0 2 l 0 2 l 0 2 l 0 2 l 0 1 l 1 4 l 0 2 l 0 3 l 0 6 l 0 3 l 0 2 l 0 4 l 0 1 l 0 1 l 0 5 l -1 2 l -1 2 l -1 6 l 0 2 l -1 3 l -2 3 l 0 2 l 0 3 l -1 3 l -1 7 l -1 3 l 0 2 l -3 5 l -1 4 l -4 9 l -2 4 l -1 3 l -3 6 l 0 2 l -1 1 l -2 3 l 0 2 l 0 1 l -2 3 l 0 2 l 0 2 l -2 6 l 0 3 l -1 3 l -1 4 l 0 2 l -1 1 l 0 4 l 0 2 l 0 2 l 0 3 l 0 2 l 0 4 l 0 1 l 0 1 l 0 4 l 0 1 l 0 1 l 0 1 l 0 1 l 1 1 l 0 1 l 1 2 l 1 1 l 0 2 l 2 2 l 3 6 l 2 3 l 2 2 l 4 3 l 2 2 l 2 1 l 2 2 l 2 1 l 1 1 l 1 0 l 3 2 l 2 1 l 3 3 l 2 1 l 1 1 l 3 3 l 1 1 l 2 1 l 3 2 l 3 1 l 3 0 l 4 1 l 2 0 l 2 1 l 2 0 l 2 0 l 2 1 l 3 1 l 2 0 l 6 1 l 3 0 l 2 0 l 4 0 l 2 0 l 2 0 l 4 0 l 1 0 l 2 0 l 5 0 l 2 0 l 4 0 l 3 0 l 1 0 l 2 -1 l 2 -1 l 1 0 l 3 -1 l 2 -1 l 3 0 l 5 -2 l 3 0 l 2 0 l 4 -2 l 1 -1 l 1 0 l 3 -1 l 1 -1 l 2 0 l 2 0 l 2 -1 l 2 -1 l 3 0 l 2 -1 l 2 0 l 2 -1 l 2 -1 l 2 -1 l 1 -1 l 0 -1 l 1 -1 l 1 -1 l 1 -1 l 2 -2 l 1 -3 l 0 -1 l 3 -4 l 1 -1 l 1 -3 l 2 -1 l 1 -2 l 3 -2 l 2 -2 l 1 -1 l 4 -6 l 2 -4 l 1 -4 l 5 -8 l 2 -4 l 0 -1 l 0 -1 l 0 -1 l 0 -2 l 0 -2 l 0 -1 l 0 -5 l 0 -2 l 0 -6 l 0 -2 l 0 -2 l 0 -4 l 0 -2 l 0 -1 l 0 -3 l 0 -2 l 0 -2 l 0 -4 l 0 -2 l -1 -2 l -1 -3 l -1 -2 l -1 -4 l -2 -1 l -1 -3 l 0 -3 l -1 -2 l -1 -2 l -1 -5 l -1 -1 l -1 -2 l -1 -4 l -1 -1 l 0 -2 l -2 -2 l 0 -2 l -1 -1 l -2 -4 l -1 -2 l -1 -2 l -3 -5 l -2 -2 l -4 -2 l -1 -1 l -1 0 l -1 -1 l 0 -1 l -3 -4 l -1 -2 l -3 -3 l -4 -4 l -4 -3 l -4 -1 l -5 -3 l -2 -1 l -2 -2 l -3 -1 l -2 -1 l -1 -2 l -2 -3 l -2 -2 l -1 -2 l -3 -6 l -3 -2 l -2 -2 l -4 -3 l -3 -2 l -1 -1 l -3 -1 l -1 -2 l -3 -1 l -1 -1 l -1 -2 l -1 0 l -1 -2 l -1 -2 l -2 -3 l -1 -3 l -1 -3 l -1 -3 l -1 -2 l 0 -2 l -1 -2 l 0 -1 l -1 -3 l -1 -1 l 0 -1 l -1 -2 l -1 -1 l 0 -2 l 0 -2 l 0 -2 l 0 -2 l 0 -3 l 0 -1 l 0 -2 l 0 -2 l 1 -2 l 0 -2 l 1 -1 l 1 0 l 0 -1 l 0 -1 l 2 -2 l 2 -2 l 2 -2 l 3 -2 l 0 -1 l 1 0 l 1 -1 l 1 0 l 1 0 l 1 -1 l 1 -1 l 2 0 l 0 -1 l 2 0 l 1 -1 l 1 0 l 3 -1 l 2 0 l 2 0 l 2 -1 l 1 0 l 1 -1 l 3 -1 l 1 -1 l 1 0 l 4 -1 l 1 0 l 2 0 l 6 -1 l 2 0 l 2 0 l 3 0 l 2 0 l 4 0 l 2 0 l 3 0 l 6 0 l 2 0 l 2 0 l 5 0 l 3 0 l 2 2 l 6 1 l 2 1 l 4 0 l 5 1 l 2 1 l 2 1 l 5 2 l 4 2 l 9 4 l 7 4 l 1 0 l 2 0 l 6 0 l 2 2 l 2 1 l 4 4 l 1 1 l 2 2 l 2 2 l 1 1 l 4 1 l 2 1 l 1 0 l 4 2 l 2 0 l 0 1 l 3 1 l 1 1 l 1 1 l 3 2 l 1 1 l 2 2 l 4 4 l 4 4 l 4 5 l 9 10 l 6 7 l 1 3 l 2 8 l 5 14 l 2 7 l 3 6 l 6 11 l 5 10 l 4 11 l 10 22 l 4 11 l 10 22 l 4 13 l 1 9 l 2 14 l 0 3 l 0 3 l 0 5 l 0 2 l 0 2 l 0 4 l 0 2 l 0 3 l 0 7 l 0 2 l 0 5 l 0 1 l 0 2 l 0 5 l 0 2 l 0 4 l 0 8 l 0 3 l 0 3 l 0 4 l 0 3 l 0 4 l -2 12 l -2 7 l -5 9 l -4 6 l -4 5 l -7 13 l -4 8 l -5 8 l -10 16 l -5 9 l -8 13 l -33 43 l -61 4 l -4 -1 l -2 0 l -3 -1 l -5 0 l -2 0 l -2 0 l -3 -1 l -3 0 l -1 -1 l -3 0 l -3 0 l -3 -1 l -9 0 l -4 0 l -3 -1 l -6 -1 l -4 0 l -10 -3 l -5 -1 l -5 -1 l -9 -2 l -3 -1 l -4 0 l -10 -1 l -6 0 l -5 -2 l -13 -3 l -6 -2 l -12 -2 l -9 -2 l -11 -5 l -2 0 l -2 -2 l -5 -2 l -3 -2 l -6 -4 l -4 -2 l -3 -3 l -7 -4 l -4 -3 l -8 -6 l -2 -2 l -2 -2 l -6 -7 l -4 -5 l -4 -2 l -6 -4 l -5 -1 l -5 -2 l -9 -6 l -2 -1 l -2 -2 l -3 -4 l -1 -2 l -2 -6 l -1 -5 l -2 -6 l -3 -9 l -1 -3 l -2 -3 l -3 -5 l 0 -2 l -1 -2 l 0 -4 l 0 -4 l -1 -1 l -1 -2 l -2 -6 l -1 -8 l 0 -10 l -1 -4 l 0 -3 l 0 -5 l 0 -3 l 0 -3 l -1 -8 l 0 -5 l 0 -6 l 0 -3 l -1 -3 l -2 -8 l -1 -6 l -2 -6 l -3 -6 l -1 -3 l -3 -2 l -3 -4 l -1 -1 l -2 -1 l -2 -4 l -2 -2 l -1 -3 l -3 -6 l -1 -2 l -1 -3 l -3 -3 l -1 -2 l -3 -2 l -1 -1 l -1 -1 l -4 -2 l -2 -1 l -2 0 l -5 -2 l -2 -1 l -2 0 l -3 -3 l -1 0 l -1 -2 l -1 -1 l -1 0 l -2 0 l -1 0 l -1 0 l -2 0 l -1 0 l -2 0 l 0 -1 l -3 0 l -1 0 l -2 -1 l -2 -1 l -1 0 l 0 -1 l -3 -1 l -1 -2 l -2 0 l -3 -3 l -2 0 l -2 -1 l -3 -2 l -1 -1 l -3 -1 l -1 0 l -1 -1 l -3 -1 l -1 -1 l -2 -1 l -3 -2 l -1 0 l -1 -1 l -2 -2 l 0 -1 l -1 -1 l 0 -2 l 0 -1 l -1 -2 l 0 -1 l -1 0 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -2 l 0 -1 l 1 -1 l 1 -1 l 1 -1 l 2 -2 l 1 0 l 1 -1 l 1 -1 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 2 0 l 1 0 l 1 0 l 2 -1 l 1 0 l 2 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 2 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 0 1 l 1 0 l 0 1 l 0 1 l 1 0">
+ <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 600 600">
+
+  <path  stroke="#529fd9" stroke-width="3" fill="none" id="zigbs" d="M 93 156 l 0 0 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l -1 -1 l 0 -1 l 0 -2 l 0 -1 l -1 -1 l 0 -2 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -3 l 0 -2 l 0 -2 l 1 -3 l 0 -2 l 1 -1 l 0 -2 l 1 -2 l 0 -1 l 1 -1 l 0 -1 l 1 -3 l 1 -1 l 1 -3 l 2 -4 l 1 -2 l 4 -3 l 2 -2 l 1 0 l 2 -2 l 1 -1 l 1 -2 l 2 -2 l 1 -2 l 0 -2 l 2 -4 l 1 -1 l 1 -3 l 1 -2 l 2 -1 l 1 -1 l 4 -3 l 2 0 l 6 -3 l 3 -1 l 2 -2 l 3 -2 l 1 0 l 1 -2 l 3 -1 l 2 -2 l 2 0 l 2 0 l 1 0 l 2 0 l 1 0 l 2 0 l 1 -1 l 1 0 l 2 0 l 1 -1 l 1 0 l 2 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 4 0 l 2 0 l 1 0 l 4 0 l 1 0 l 2 0 l 2 0 l 1 0 l 3 0 l 1 1 l 2 0 l 5 1 l 3 0 l 5 2 l 5 3 l 3 0 l 3 1 l 7 4 l 5 2 l 5 3 l 6 3 l 1 1 l 1 1 l 1 0 l 1 1 l 2 1 l 1 0 l 1 1 l 1 1 l 0 1 l 2 4 l 2 2 l 1 5 l 2 3 l 1 2 l 1 2 l 2 3 l 0 1 l 2 2 l 0 2 l 1 1 l 1 3 l 0 1 l 0 3 l 1 3 l 1 1 l 0 2 l 0 2 l 0 2 l 0 2 l 0 2 l 0 1 l 1 4 l 0 2 l 0 3 l 0 6 l 0 3 l 0 2 l 0 4 l 0 1 l 0 1 l 0 5 l -1 2 l -1 2 l -1 6 l 0 2 l -1 3 l -2 3 l 0 2 l 0 3 l -1 3 l -1 7 l -1 3 l 0 2 l -3 5 l -1 4 l -4 9 l -2 4 l -1 3 l -3 6 l 0 2 l -1 1 l -2 3 l 0 2 l 0 1 l -2 3 l 0 2 l 0 2 l -2 6 l 0 3 l -1 3 l -1 4 l 0 2 l -1 1 l 0 4 l 0 2 l 0 2 l 0 3 l 0 2 l 0 4 l 0 1 l 0 1 l 0 4 l 0 1 l 0 1 l 0 1 l 0 1 l 1 1 l 0 1 l 1 2 l 1 1 l 0 2 l 2 2 l 3 6 l 2 3 l 2 2 l 4 3 l 2 2 l 2 1 l 2 2 l 2 1 l 1 1 l 1 0 l 3 2 l 2 1 l 3 3 l 2 1 l 1 1 l 3 3 l 1 1 l 2 1 l 3 2 l 3 1 l 3 0 l 4 1 l 2 0 l 2 1 l 2 0 l 2 0 l 2 1 l 3 1 l 2 0 l 6 1 l 3 0 l 2 0 l 4 0 l 2 0 l 2 0 l 4 0 l 1 0 l 2 0 l 5 0 l 2 0 l 4 0 l 3 0 l 1 0 l 2 -1 l 2 -1 l 1 0 l 3 -1 l 2 -1 l 3 0 l 5 -2 l 3 0 l 2 0 l 4 -2 l 1 -1 l 1 0 l 3 -1 l 1 -1 l 2 0 l 2 0 l 2 -1 l 2 -1 l 3 0 l 2 -1 l 2 0 l 2 -1 l 2 -1 l 2 -1 l 1 -1 l 0 -1 l 1 -1 l 1 -1 l 1 -1 l 2 -2 l 1 -3 l 0 -1 l 3 -4 l 1 -1 l 1 -3 l 2 -1 l 1 -2 l 3 -2 l 2 -2 l 1 -1 l 4 -6 l 2 -4 l 1 -4 l 5 -8 l 2 -4 l 0 -1 l 0 -1 l 0 -1 l 0 -2 l 0 -2 l 0 -1 l 0 -5 l 0 -2 l 0 -6 l 0 -2 l 0 -2 l 0 -4 l 0 -2 l 0 -1 l 0 -3 l 0 -2 l 0 -2 l 0 -4 l 0 -2 l -1 -2 l -1 -3 l -1 -2 l -1 -4 l -2 -1 l -1 -3 l 0 -3 l -1 -2 l -1 -2 l -1 -5 l -1 -1 l -1 -2 l -1 -4 l -1 -1 l 0 -2 l -2 -2 l 0 -2 l -1 -1 l -2 -4 l -1 -2 l -1 -2 l -3 -5 l -2 -2 l -4 -2 l -1 -1 l -1 0 l -1 -1 l 0 -1 l -3 -4 l -1 -2 l -3 -3 l -4 -4 l -4 -3 l -4 -1 l -5 -3 l -2 -1 l -2 -2 l -3 -1 l -2 -1 l -1 -2 l -2 -3 l -2 -2 l -1 -2 l -3 -6 l -3 -2 l -2 -2 l -4 -3 l -3 -2 l -1 -1 l -3 -1 l -1 -2 l -3 -1 l -1 -1 l -1 -2 l -1 0 l -1 -2 l -1 -2 l -2 -3 l -1 -3 l -1 -3 l -1 -3 l -1 -2 l 0 -2 l -1 -2 l 0 -1 l -1 -3 l -1 -1 l 0 -1 l -1 -2 l -1 -1 l 0 -2 l 0 -2 l 0 -2 l 0 -2 l 0 -3 l 0 -1 l 0 -2 l 0 -2 l 1 -2 l 0 -2 l 1 -1 l 1 0 l 0 -1 l 0 -1 l 2 -2 l 2 -2 l 2 -2 l 3 -2 l 0 -1 l 1 0 l 1 -1 l 1 0 l 1 0 l 1 -1 l 1 -1 l 2 0 l 0 -1 l 2 0 l 1 -1 l 1 0 l 3 -1 l 2 0 l 2 0 l 2 -1 l 1 0 l 1 -1 l 3 -1 l 1 -1 l 1 0 l 4 -1 l 1 0 l 2 0 l 6 -1 l 2 0 l 2 0 l 3 0 l 2 0 l 4 0 l 2 0 l 3 0 l 6 0 l 2 0 l 2 0 l 5 0 l 3 0 l 2 2 l 6 1 l 2 1 l 4 0 l 5 1 l 2 1 l 2 1 l 5 2 l 4 2 l 9 4 l 7 4 l 1 0 l 2 0 l 6 0 l 2 2 l 2 1 l 4 4 l 1 1 l 2 2 l 2 2 l 1 1 l 4 1 l 2 1 l 1 0 l 4 2 l 2 0 l 0 1 l 3 1 l 1 1 l 1 1 l 3 2 l 1 1 l 2 2 l 4 4 l 4 4 l 4 5 l 9 10 l 6 7 l 1 3 l 2 8 l 5 14 l 2 7 l 3 6 l 6 11 l 5 10 l 4 11 l 10 22 l 4 11 l 10 22 l 4 13 l 1 9 l 2 14 l 0 3 l 0 3 l 0 5 l 0 2 l 0 2 l 0 4 l 0 2 l 0 3 l 0 7 l 0 2 l 0 5 l 0 1 l 0 2 l 0 5 l 0 2 l 0 4 l 0 8 l 0 3 l 0 3 l 0 4 l 0 3 l 0 4 l -2 12 l -2 7 l -5 9 l -4 6 l -4 5 l -7 13 l -4 8 l -5 8 l -10 16 l -5 9 l -8 13 l -33 43 l -61 4 l -4 -1 l -2 0 l -3 -1 l -5 0 l -2 0 l -2 0 l -3 -1 l -3 0 l -1 -1 l -3 0 l -3 0 l -3 -1 l -9 0 l -4 0 l -3 -1 l -6 -1 l -4 0 l -10 -3 l -5 -1 l -5 -1 l -9 -2 l -3 -1 l -4 0 l -10 -1 l -6 0 l -5 -2 l -13 -3 l -6 -2 l -12 -2 l -9 -2 l -11 -5 l -2 0 l -2 -2 l -5 -2 l -3 -2 l -6 -4 l -4 -2 l -3 -3 l -7 -4 l -4 -3 l -8 -6 l -2 -2 l -2 -2 l -6 -7 l -4 -5 l -4 -2 l -6 -4 l -5 -1 l -5 -2 l -9 -6 l -2 -1 l -2 -2 l -3 -4 l -1 -2 l -2 -6 l -1 -5 l -2 -6 l -3 -9 l -1 -3 l -2 -3 l -3 -5 l 0 -2 l -1 -2 l 0 -4 l 0 -4 l -1 -1 l -1 -2 l -2 -6 l -1 -8 l 0 -10 l -1 -4 l 0 -3 l 0 -5 l 0 -3 l 0 -3 l -1 -8 l 0 -5 l 0 -6 l 0 -3 l -1 -3 l -2 -8 l -1 -6 l -2 -6 l -3 -6 l -1 -3 l -3 -2 l -3 -4 l -1 -1 l -2 -1 l -2 -4 l -2 -2 l -1 -3 l -3 -6 l -1 -2 l -1 -3 l -3 -3 l -1 -2 l -3 -2 l -1 -1 l -1 -1 l -4 -2 l -2 -1 l -2 0 l -5 -2 l -2 -1 l -2 0 l -3 -3 l -1 0 l -1 -2 l -1 -1 l -1 0 l -2 0 l -1 0 l -1 0 l -2 0 l -1 0 l -2 0 l 0 -1 l -3 0 l -1 0 l -2 -1 l -2 -1 l -1 0 l 0 -1 l -3 -1 l -1 -2 l -2 0 l -3 -3 l -2 0 l -2 -1 l -3 -2 l -1 -1 l -3 -1 l -1 0 l -1 -1 l -3 -1 l -1 -1 l -2 -1 l -3 -2 l -1 0 l -1 -1 l -2 -2 l 0 -1 l -1 -1 l 0 -2 l 0 -1 l -1 -2 l 0 -1 l -1 0 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -2 l 0 -1 l 1 -1 l 1 -1 l 1 -1 l 2 -2 l 1 0 l 1 -1 l 1 -1 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 2 0 l 1 0 l 1 0 l 2 -1 l 1 0 l 2 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 2 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 0 1 l 1 0 l 0 1 l 0 1 l 1 0">
 </path>
   <circle cx="" cy="" r="8" fill="#529fd9">
     <animateMotion dur="6s" repeatCount="indefinite">
@@ -309,12 +266,11 @@ function getid(obj) {
   <select id="mySelect" size="8" style="position:  absolute;float: left;right: 2px;height: 90%;top: 30;width: 110px;background-color: #162b4a;color: #117b86;border: #4f7e9a 1px solid;overflow:  auto;">
     <option>Click To Store </option> 
   <option>V78</option><option>V74</option><option>X78</option><option>Q75</option><option>O70</option><option>O68</option><option>P66</option><option>X70</option><option>AA62</option><option>AI70</option><option>AP74</option><option>AC51</option><option>AH36</option><option>R32</option><option>R23</option><option>W17</option><option>AG15</option><option>AR110</option><option>AJ127</option><option>AJ127</option><option>Y126</option><option>F114</option><option>K92</option><option>Y58</option><option>AH39</option><option>W24</option><option>M23</option><option>G17</option><option>F12</option><option>AK8</option><option>AO119</option></select>
- 
- 
- 
-<script>
 
-function myFunction(obj) {
+
+
+ <script>
+ function myFunction(obj) {
     var x = document.getElementById("mySelect");
     var option = document.createElement("option");
     option.text = obj.id; 
@@ -323,11 +279,11 @@ function myFunction(obj) {
 }
  
 </script>
- 
-  </body>
+
+   </body>
   </html>
 
-  <!DOCTYPE html>
+   <!DOCTYPE html>
 <html>
     <head>
         <title>box-shadow-experiment</title>
@@ -343,320 +299,6 @@ function myFunction(obj) {
     top: 49%;
     left: 48.85%;
 }
-        </style>
-        <script type="text/javascript">
-            window.onload = function(){
-                var bsDiv = document.getElementById("box-shadow-div");
-                var x, y;
-    // On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
-                window.addEventListener('mousemove', function(event){
-                    x = event.clientX+20;
-                    y = event.clientY+20;                    
-                    if ( typeof x !== 'undefined' ){
-                        bsDiv.style.left = x + "px";
-                        bsDiv.style.top = y + "px";
-                    }
-                }, false);
-            }
-        </script>
-    </head>
-    <body>
-        <div id="box-shadow-div"></div>
-    </body>
-</html>
-}
-
- 
-table {
-  width: 220px;
-  /*margin: 0px;*/
-  table-layout: fixed;
-  border-collapse: separate;
-  border-spacing: 1px;
-}
-
-th {
-  position: relative;
-  width: 80px;
-  height: 32px;
-  padding: 0 0 12px;
-  text-align: center;
-}
-
-th::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 20px;
-  background-color: #acc2c2;
-  transition: opacity .4s;
-}
-
-td {
-  position: relative;
-  width: 2px;
-  height: 9px;
-  padding: 4px;
-  vertical-align: top;
-  background-color: #dfe7e7;
-}
-
-td:empty {
- /* background-color: transparent;*/
-}
- 
-
-.tg-0lax {
-  opacity: 100%;
-  font-size: 1.1em;
-  font-weight: bold;
-  transition: opacity .4s;
-}
- 
- /*
- *  STYLE 3
- */
-
-#mySelect::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #3c516f;
-}
-
-#mySelect::-webkit-scrollbar
-{
-    width: 6px;
-    background-color: #3c516f;
-}
-
-#mySelect::-webkit-scrollbar-thumb
-{
-    background-color: #404040;
-}
-
-
-/* 138 cloumn
-    62 rows
-*/
-</style>
-
-  <meta charset="UTF-8">
-  
-</head>
-<script>
-
-document.getElementById("table1").addEventListener("load", change);
-</script>
-<html><head>
-    <style>
-        
-    </style>
-    </head>
-<body>
- 
-    <script type="text/javascript">
-        var i = 0;
-		var color = ["#529fd9", "#162b4a"];
-		var colorv = ["#162b4a", "#529fd9"];
-		var Alph = ["A","B", "C", "D", "E", "F", "G", "H",
-		"I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
-		"S", "T", "U", "V", "W", "X", "Y", "Z", "AA", "AB",
-		"AC", "AD", "AE", "AF", "AG", "AH", "AI", "AJ", "AK",
-		"AL", "AM", "AN", "AO", "AP", "AQ", "AR", "AS", "AT",
-		"AU", "AV", "AW", "AX", "AY", "AZ", "BA", "BB", "BC",
-		"BD", "BE", "BF", "BG", "BH", "BI", "BJ"];
-
-function change() {
-   i = (i + 1) % color.length;
-
-
-	  for(var r=0;r<62;r++){
-	  for(var c=0;c<138;c++){
-      var doc = document.getElementById(Alph[r] + "60");
-      doc.style.background = color[i];
-  var docv = document.getElementById("AC" + c );
-    docv.style.background = colorv[i];
-	
-
-   } 
-   }
- 
-}
-setInterval(change, 1000);
-    </script>
-
-</body></html>
-<body translate="no" >
- <script>
-loadtheclicks() {
-var ar = document.querySelectorAll("td"); //could also use getElementByTagname
-        for (var i=0; i< ar.length; i++) {
-            ar[i].addEventListener("click", function() { this.style.background = '#000000'; }, false);
-        }
-}
- 
-</script>
-
- </body>
- </html>
- <!DOCTYPE html>
-<html>
-<head>
-<title> Boxes </title>
-<meta charset='utf-8'>
-  
-  </head>
-  <body>
-  <table>
-  <tbody> 
-  <div id="content"></div>
-  <script type="text/javascript">
-    var row = 48;
-    var cols = 138;
- 
-function getid(obj) { 
-	 var myDiv = document.getElementById("content");
-	 var myDiv0 = document.getElementById("box-shadow-div");
-    myDiv.innerHTML = "Location : " + obj.id;
-	myDiv0.innerHTML =  myDiv.innerHTML;
-  }
- var colorc = ["","#339196", "#33963b", "#949633", "#963345"];
- 
- var mDiv = document.getElementById("you");
-  var ic = 0;     
-  for(var r=0;r<row;r++){
-    document.write("</tr>");
-
-    for(var c=0;c<cols;c++){
-	var rc = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
-        g = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
-        b = ('0'+(Math.random()*255|0).toString(16)).slice(-2);
-		 
-       //c[1].style.background = color[i];
-  
-     document.write('<td id="' + Alph[r] + c + '" onclick="myFunction(this);"  onmouseover="getid(this);" onmouseout="outmouse(this);" style="background:' + colorc[ic] + ';" ></td>'); 
- 	    
-     ic = Math.floor((Math.random() * 4) + 1); 
-	 
-     }
-    document.write("</tr>");
-	 
-  }
-  
-  </script>
-  </tbody>
-  </table>
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="120" height="120"  viewBox="28.1303 -32.1355 518.414 490.617">
-  <path d="M 199,200 Q 300, 174.12 384,197  M 400,200 M 415, 205 C 600, 251.76 444.82,520.52 300,372.2 Q 227.59,299.54 205,216  M 200,200 M 197, 186 C 145.82,0.82 455.18,0.82 400,200 Q 372.41,299.54 312,361  M 300,373.2 M 290, 383.2 C 155.18,520.52 0,251.76 200,200 "
-        stroke="#529fd9" stroke-width="2" fill="none" id="wire"></path>
-  <circle cx="" cy="" r="8" fill="#529fd9">
-    <animateMotion dur="20s" repeatCount="indefinite">
-      <mpath xlink:href="#wire"></mpath>
-    </animateMotion>
-  </circle>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="120" height="120"  viewBox="0 0 200 200">
-  <path d="M 100, 100
-        m -75, 0
-        a 75,75 0 1,0 150,0
-        a 75,75 0 1,0 -150,0"
-        stroke="#529fd9" stroke-width="1" fill="none" id="wir"></path>
-  <circle cx="" cy="" r="4" fill="#529fd9">
-    <animateMotion dur="20s" repeatCount="indefinite">
-      <mpath xlink:href="#wir"></mpath>
-    </animateMotion>
-  </circle>
-</svg>
- 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="120" height="120"  viewBox="0 0 400 400">
-  <path d="M 100 100 L 300 100 L 200 300 z"
-        stroke="#529fd9" stroke-width="2" fill="none" id="rec"></path>
-  <circle cx="" cy="" r="8" fill="#529fd9">
-    <animateMotion dur="6s" repeatCount="indefinite">
-      <mpath xlink:href="#rec"></mpath>
-    </animateMotion>
-  </circle>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 100 100">
-  <path d="M 10 30 h 10 v 10 h 10 v 10 h 10 v 10 h 10 v 10 h 10 v 10 h 10 v 10" stroke="#529fd9" stroke-width=".5" fill="none" id="zig"></path>
-  <circle cx="" cy="" r="1" fill="#529fd9">
-    <animateMotion dur="6s" repeatCount="indefinite">
-      <mpath xlink:href="#zig"></mpath>
-    </animateMotion>
-  </circle>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 -116 124 116"> 
-<g transform="scale(1,-1)">
-
-<path d="M120,4 V112 H4 V12 H48 V24 H16 V100 H108 V16 H72 V20 H104 V96 H20 V28 H52 V8 L56,4 V32 H24 V92 H100 V24 H68 V12 H112 V104 H12 V20 H44 V16 H8 V108 H116 V8 H64 V28 H96 V88 H28 V36 H56 V60 H68 V44 H80 V72 H44 V48 H40 V76 H84 V40 H64 V52 L60,56 V36 H88 V80 H36 V44 H48 V68 H76 V48 H72 V64 H52 V40 H32 V84 H92 V32 H60 V4Z" stroke="#529fd9" stroke-width="1" fill="none" id="sr"></path>
-    <circle cx="" cy="" r="2" fill="red">
-    <animateMotion dur="70s" repeatCount="indefinite">
-      <mpath xlink:href="#sr"></mpath>
-    </animateMotion>
-  </circle>
-</g>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 400 400">
-  <path d="M 182 67 l 1 1 l 1 1 l 0 2 l 1 5 l 2 7 l 6 10 l 26 66 l 15 39 l 27 70 l 7 15 l 6 8 l 8 6 l 2 0 l 1 0 l 0 -2 l 1 -3 l 1 -5 l 2 -5 l 1 -1 l 1 0" stroke="#529fd9" stroke-width="3" fill="none" id="zigb"></path>
-  <circle cx="" cy="" r="8" fill="#529fd9">
-    <animateMotion dur="6s" repeatCount="indefinite">
-      <mpath xlink:href="#zigb"></mpath>
-    </animateMotion>
-  </circle>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 600 600">
-  
- <path  stroke="#529fd9" stroke-width="3" fill="none" id="zigbs" d="M 93 156 l 0 0 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l -1 -1 l 0 -1 l 0 -2 l 0 -1 l -1 -1 l 0 -2 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -3 l 0 -2 l 0 -2 l 1 -3 l 0 -2 l 1 -1 l 0 -2 l 1 -2 l 0 -1 l 1 -1 l 0 -1 l 1 -3 l 1 -1 l 1 -3 l 2 -4 l 1 -2 l 4 -3 l 2 -2 l 1 0 l 2 -2 l 1 -1 l 1 -2 l 2 -2 l 1 -2 l 0 -2 l 2 -4 l 1 -1 l 1 -3 l 1 -2 l 2 -1 l 1 -1 l 4 -3 l 2 0 l 6 -3 l 3 -1 l 2 -2 l 3 -2 l 1 0 l 1 -2 l 3 -1 l 2 -2 l 2 0 l 2 0 l 1 0 l 2 0 l 1 0 l 2 0 l 1 -1 l 1 0 l 2 0 l 1 -1 l 1 0 l 2 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 4 0 l 2 0 l 1 0 l 4 0 l 1 0 l 2 0 l 2 0 l 1 0 l 3 0 l 1 1 l 2 0 l 5 1 l 3 0 l 5 2 l 5 3 l 3 0 l 3 1 l 7 4 l 5 2 l 5 3 l 6 3 l 1 1 l 1 1 l 1 0 l 1 1 l 2 1 l 1 0 l 1 1 l 1 1 l 0 1 l 2 4 l 2 2 l 1 5 l 2 3 l 1 2 l 1 2 l 2 3 l 0 1 l 2 2 l 0 2 l 1 1 l 1 3 l 0 1 l 0 3 l 1 3 l 1 1 l 0 2 l 0 2 l 0 2 l 0 2 l 0 2 l 0 1 l 1 4 l 0 2 l 0 3 l 0 6 l 0 3 l 0 2 l 0 4 l 0 1 l 0 1 l 0 5 l -1 2 l -1 2 l -1 6 l 0 2 l -1 3 l -2 3 l 0 2 l 0 3 l -1 3 l -1 7 l -1 3 l 0 2 l -3 5 l -1 4 l -4 9 l -2 4 l -1 3 l -3 6 l 0 2 l -1 1 l -2 3 l 0 2 l 0 1 l -2 3 l 0 2 l 0 2 l -2 6 l 0 3 l -1 3 l -1 4 l 0 2 l -1 1 l 0 4 l 0 2 l 0 2 l 0 3 l 0 2 l 0 4 l 0 1 l 0 1 l 0 4 l 0 1 l 0 1 l 0 1 l 0 1 l 1 1 l 0 1 l 1 2 l 1 1 l 0 2 l 2 2 l 3 6 l 2 3 l 2 2 l 4 3 l 2 2 l 2 1 l 2 2 l 2 1 l 1 1 l 1 0 l 3 2 l 2 1 l 3 3 l 2 1 l 1 1 l 3 3 l 1 1 l 2 1 l 3 2 l 3 1 l 3 0 l 4 1 l 2 0 l 2 1 l 2 0 l 2 0 l 2 1 l 3 1 l 2 0 l 6 1 l 3 0 l 2 0 l 4 0 l 2 0 l 2 0 l 4 0 l 1 0 l 2 0 l 5 0 l 2 0 l 4 0 l 3 0 l 1 0 l 2 -1 l 2 -1 l 1 0 l 3 -1 l 2 -1 l 3 0 l 5 -2 l 3 0 l 2 0 l 4 -2 l 1 -1 l 1 0 l 3 -1 l 1 -1 l 2 0 l 2 0 l 2 -1 l 2 -1 l 3 0 l 2 -1 l 2 0 l 2 -1 l 2 -1 l 2 -1 l 1 -1 l 0 -1 l 1 -1 l 1 -1 l 1 -1 l 2 -2 l 1 -3 l 0 -1 l 3 -4 l 1 -1 l 1 -3 l 2 -1 l 1 -2 l 3 -2 l 2 -2 l 1 -1 l 4 -6 l 2 -4 l 1 -4 l 5 -8 l 2 -4 l 0 -1 l 0 -1 l 0 -1 l 0 -2 l 0 -2 l 0 -1 l 0 -5 l 0 -2 l 0 -6 l 0 -2 l 0 -2 l 0 -4 l 0 -2 l 0 -1 l 0 -3 l 0 -2 l 0 -2 l 0 -4 l 0 -2 l -1 -2 l -1 -3 l -1 -2 l -1 -4 l -2 -1 l -1 -3 l 0 -3 l -1 -2 l -1 -2 l -1 -5 l -1 -1 l -1 -2 l -1 -4 l -1 -1 l 0 -2 l -2 -2 l 0 -2 l -1 -1 l -2 -4 l -1 -2 l -1 -2 l -3 -5 l -2 -2 l -4 -2 l -1 -1 l -1 0 l -1 -1 l 0 -1 l -3 -4 l -1 -2 l -3 -3 l -4 -4 l -4 -3 l -4 -1 l -5 -3 l -2 -1 l -2 -2 l -3 -1 l -2 -1 l -1 -2 l -2 -3 l -2 -2 l -1 -2 l -3 -6 l -3 -2 l -2 -2 l -4 -3 l -3 -2 l -1 -1 l -3 -1 l -1 -2 l -3 -1 l -1 -1 l -1 -2 l -1 0 l -1 -2 l -1 -2 l -2 -3 l -1 -3 l -1 -3 l -1 -3 l -1 -2 l 0 -2 l -1 -2 l 0 -1 l -1 -3 l -1 -1 l 0 -1 l -1 -2 l -1 -1 l 0 -2 l 0 -2 l 0 -2 l 0 -2 l 0 -3 l 0 -1 l 0 -2 l 0 -2 l 1 -2 l 0 -2 l 1 -1 l 1 0 l 0 -1 l 0 -1 l 2 -2 l 2 -2 l 2 -2 l 3 -2 l 0 -1 l 1 0 l 1 -1 l 1 0 l 1 0 l 1 -1 l 1 -1 l 2 0 l 0 -1 l 2 0 l 1 -1 l 1 0 l 3 -1 l 2 0 l 2 0 l 2 -1 l 1 0 l 1 -1 l 3 -1 l 1 -1 l 1 0 l 4 -1 l 1 0 l 2 0 l 6 -1 l 2 0 l 2 0 l 3 0 l 2 0 l 4 0 l 2 0 l 3 0 l 6 0 l 2 0 l 2 0 l 5 0 l 3 0 l 2 2 l 6 1 l 2 1 l 4 0 l 5 1 l 2 1 l 2 1 l 5 2 l 4 2 l 9 4 l 7 4 l 1 0 l 2 0 l 6 0 l 2 2 l 2 1 l 4 4 l 1 1 l 2 2 l 2 2 l 1 1 l 4 1 l 2 1 l 1 0 l 4 2 l 2 0 l 0 1 l 3 1 l 1 1 l 1 1 l 3 2 l 1 1 l 2 2 l 4 4 l 4 4 l 4 5 l 9 10 l 6 7 l 1 3 l 2 8 l 5 14 l 2 7 l 3 6 l 6 11 l 5 10 l 4 11 l 10 22 l 4 11 l 10 22 l 4 13 l 1 9 l 2 14 l 0 3 l 0 3 l 0 5 l 0 2 l 0 2 l 0 4 l 0 2 l 0 3 l 0 7 l 0 2 l 0 5 l 0 1 l 0 2 l 0 5 l 0 2 l 0 4 l 0 8 l 0 3 l 0 3 l 0 4 l 0 3 l 0 4 l -2 12 l -2 7 l -5 9 l -4 6 l -4 5 l -7 13 l -4 8 l -5 8 l -10 16 l -5 9 l -8 13 l -33 43 l -61 4 l -4 -1 l -2 0 l -3 -1 l -5 0 l -2 0 l -2 0 l -3 -1 l -3 0 l -1 -1 l -3 0 l -3 0 l -3 -1 l -9 0 l -4 0 l -3 -1 l -6 -1 l -4 0 l -10 -3 l -5 -1 l -5 -1 l -9 -2 l -3 -1 l -4 0 l -10 -1 l -6 0 l -5 -2 l -13 -3 l -6 -2 l -12 -2 l -9 -2 l -11 -5 l -2 0 l -2 -2 l -5 -2 l -3 -2 l -6 -4 l -4 -2 l -3 -3 l -7 -4 l -4 -3 l -8 -6 l -2 -2 l -2 -2 l -6 -7 l -4 -5 l -4 -2 l -6 -4 l -5 -1 l -5 -2 l -9 -6 l -2 -1 l -2 -2 l -3 -4 l -1 -2 l -2 -6 l -1 -5 l -2 -6 l -3 -9 l -1 -3 l -2 -3 l -3 -5 l 0 -2 l -1 -2 l 0 -4 l 0 -4 l -1 -1 l -1 -2 l -2 -6 l -1 -8 l 0 -10 l -1 -4 l 0 -3 l 0 -5 l 0 -3 l 0 -3 l -1 -8 l 0 -5 l 0 -6 l 0 -3 l -1 -3 l -2 -8 l -1 -6 l -2 -6 l -3 -6 l -1 -3 l -3 -2 l -3 -4 l -1 -1 l -2 -1 l -2 -4 l -2 -2 l -1 -3 l -3 -6 l -1 -2 l -1 -3 l -3 -3 l -1 -2 l -3 -2 l -1 -1 l -1 -1 l -4 -2 l -2 -1 l -2 0 l -5 -2 l -2 -1 l -2 0 l -3 -3 l -1 0 l -1 -2 l -1 -1 l -1 0 l -2 0 l -1 0 l -1 0 l -2 0 l -1 0 l -2 0 l 0 -1 l -3 0 l -1 0 l -2 -1 l -2 -1 l -1 0 l 0 -1 l -3 -1 l -1 -2 l -2 0 l -3 -3 l -2 0 l -2 -1 l -3 -2 l -1 -1 l -3 -1 l -1 0 l -1 -1 l -3 -1 l -1 -1 l -2 -1 l -3 -2 l -1 0 l -1 -1 l -2 -2 l 0 -1 l -1 -1 l 0 -2 l 0 -1 l -1 -2 l 0 -1 l -1 0 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -1 l 0 -2 l 0 -1 l 1 -1 l 1 -1 l 1 -1 l 2 -2 l 1 0 l 1 -1 l 1 -1 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 2 0 l 1 0 l 1 0 l 2 -1 l 1 0 l 2 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 2 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 1 0 l 0 1 l 1 0 l 0 1 l 0 1 l 1 0">
-</path>
-  <circle cx="" cy="" r="8" fill="#529fd9">
-    <animateMotion dur="6s" repeatCount="indefinite">
-      <mpath xlink:href="#zigbs"></mpath>
-    </animateMotion>
-  </circle>
-</svg>
-  <select id="mySelect" size="8" style="position:  absolute;float: left;right: 2px;height: 90%;top: 30;width: 110px;background-color: #162b4a;color: #117b86;border: #4f7e9a 1px solid;overflow:  auto;">
-    <option>Click To Store </option> 
-  <option>V78</option><option>V74</option><option>X78</option><option>Q75</option><option>O70</option><option>O68</option><option>P66</option><option>X70</option><option>AA62</option><option>AI70</option><option>AP74</option><option>AC51</option><option>AH36</option><option>R32</option><option>R23</option><option>W17</option><option>AG15</option><option>AR110</option><option>AJ127</option><option>AJ127</option><option>Y126</option><option>F114</option><option>K92</option><option>Y58</option><option>AH39</option><option>W24</option><option>M23</option><option>G17</option><option>F12</option><option>AK8</option><option>AO119</option></select>
- 
- 
- 
-<script>
-
-function myFunction(obj) {
-    var x = document.getElementById("mySelect");
-    var option = document.createElement("option");
-    option.text = obj.id; 
-     x.add(option);
-	  
-}
- 
-</script>
- 
-  </body>
-  </html>
-
-  <!DOCTYPE html>
-<html>
-    <head>
-        <title>box-shadow-experiment</title>
-        <style type="text/css">
-            #box-shadow-div{
-                position: fixed;
-                width: 120px;
-                height: 20px;
-                /*border-radius: 100%;*/
-                background-color:green;
-               /* box-shadow: 0 0 10px 10px black;*/
-                top: 49%;
-                left: 48.85%;
-            }
         </style>
         <script type="text/javascript">
             window.onload = function(){
